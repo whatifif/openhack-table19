@@ -8,11 +8,11 @@ This is microsoft openhack table19 team repo.
 
 Here are members name and github id:
 
-Alyse: abroombroom
-Abner: zhangabner
-Heeseob: whatifif
-Nigel: nzigel
-Valerie: valerie
+Alyse: abroombroom  
+Abner: zhangabner  
+Heeseob: whatifif  
+Nigel: nzigel  
+Valerie: valerie  
 
 ## There are 6 challenges
 #### Challenge 0: Setting Up Your Workspace For A Successful OpenHack
@@ -82,6 +82,8 @@ Code cell 2
 Run this Python code:
 
   import sys
+  
+  
   sys.version
 References
 Ubuntu DSVM
@@ -224,3 +226,198 @@ The numpy package can be used for I/O as well (Ref) - quicker than pandas I/O
 Some ways to “strech” the pixel range of an image include: pixel-intensity normalizing or equalizing the image histogram. Explore stackoverflow and PIL for some ideas.
 In matplotlib a pixel value of 0 for all channels appears black, 1 appears white, and 255 appears black.
 In opencv images are read in a BGR whereas matplotlib reads and expects images as RGB. Conversion information can be found here
+
+#### Challenge 3: Introduction to Custom Machine Learning
+Background
+Challenge 2 set the team up for success by providing quality data. Challenge 3 will begin a journey into custom Machine Learning.
+
+AdventureWorks wants their Data Science team, including your team members, to begin learning how and when to perform custom Machine Learning with powerful, more programmatic APIs. Becoming proficient in Machine Learning takes some time, however, beginning with a high-level API, that is stable and has good documentation, is a great start. Some of the reasons to move on to custom Machine Learning include:
+
+To explore different algorithms to optimize what works best for the data
+To create a workflow with more control over your process
+To deploy a model to a specific architecture or configuration
+Certain limits in bandwidth or data size for a current service have been exceeded
+In this challenge, classical or traditional Machine Learning will be used. There are times when it makes sense to use, or at least begin with, traditional Machine Learning:
+
+No need for expensive GPU
+Used in ML on Edge
+Simple APIs for fast prototyping
+Is used in production systems
+Algorithm variety
+Prerequisites
+Team has a setup for sharing code and working in Jupyter
+Preprocessed Gear image data from Challenge 2
+An installation of the Python package called scikit-learn - check if it is installed and update it to the lastest or simply install (see Hints).
+Challenge
+One of the most popular and well-established Python ML packages, Scikit-Learn, is often the go-to package for starting out and is not uncommon in production systems. It has a simple, intuitive API (often modeled by other packages) and is a great place to start for learning, implementing and programming traditional ML and basic neural networks in Python.
+
+Use the team setup and team expertise to do the following tasks.
+
+Use a non-parametric classification method (see References) to create a model to predict the class of a new gear image, training on the preprocessed 128x128x3 gear data from Challenge 2. The algorithm should be chosen from “off-the-shelf” non-parametric algorithms for classification found in the scikit-learn library.
+
+Split the processed data into a train and test data set in order to train a machine learning model and calculate the accuracy of that model. In order to optimize model quality, the training data set is usually much larger than the test set while still leaving enough data to adequately test the model.
+
+Find more information in the References and Hints.
+
+Perform the following as a team:
+
+Split the preprocessed image array data from Challenge 2 into train and test sets
+Choose an algorithm from scikit-learn documentation
+Train the model with the training data from the split
+Predict the class of the following piece of gear with the model: here
+Evaluate the model with a confusion matrix to see how individual classes performed (use test data from the split)
+Output the overall accuracy (use test data from the split)
+Success Criteria
+The team will run one code cell in a Jupyter notebook for the coach predicting the class successfully of a piece of gear in the provided URL above.
+The team will run one code cell in a Jupyter notebook for the coach showing the accuracy score on the test data from the split. This score should be above 80%.
+References
+Read me first
+
+scikit-learn algorithm cheatsheet Ref
+jupyter Ref
+Non-parametric and parametric algorithm differences Ref
+ML and Scikit-Learn
+
+scikit-learn Machine Learning guide with vocabulary Ref
+scikit-learn Supervised Learning Ref
+scikit-learn General User Guide Ref
+Hints
+Install packages with pip install package_name if it is not installed and pip install --upgrade package_name if it needs to be updated to the latest version.
+It can help to create an “image reader” function if not already built.
+
+#### Challenge 4: Deep Learning
+Background
+The Data Science team at AdventureWorks and your team have now learned a great deal about classical Machine Learning and have put it to practical use. If the accuracy was acceptable, AdventureWorks would likely stick with a simple, easy-to-use frameworks like scikit-learn.
+
+However, the gear retailer wants to try deep learning algorithms on the data to see if the accuracy of gear classification improves. AdventureWorks also anticipates an influx of catalog and outdoor pictures soon and deep learning shines when the data size gets bigger. Also, the Data Science team is eager to learn more about deep learning and Convolutional Neural Networks (CNNs) for image analysis because CNNs naturally lend themselves to performing well on complex data such as images.
+
+What differentiates Deep Learning from the more general Artificial Neural Networks is the hidden layers in its architecture which help to better “learn” features in complex data. Neural Networks are the network architectures made up of simple neurons and Deep Learning is the implementation that can solve complex problems. Also, Deep learning solutions can require less preprocessing and feature engineering.
+
+Prerequisites
+Team decides upon a deep learning framework to use in this Challenge, after reading about several different frameworks (see References)
+Team performs any installs or updates to the latest versions of frameworks in their chosen setup
+Challenge
+Use the team setup and expertise to do the following tasks.
+
+NOTE: Training a Deep Learning model is faster on a GPU machine. If the team setup does not already include GPU, consider working with your coach to adjust the setup before proceeding.
+
+Create a Convolutional Neural Network (a deep learning architecture) to classify the gear data. The architecture or design should contain the following types of layers. See References for resources and more information.
+
+Suggested architecture:
+
+Input Layer (3 channel image input layer)
+Convolutional (2D)
+Max Pooling
+Convolutional (2D)
+Max Pooling
+Dense (Output layer)
+There are plenty of examples online in the documentation of each framework to get the team started. Check the References for more.
+
+There is architecture information in a CNTK Tutorial that is helpful in understanding these concepts and implementation.
+
+Train a model on the training dataset using the suggested architecture or an equivalent that the team wishes to try. The team will utilize a portion of their training dataset as a validation dataset. The team may have to iterate on the architecture. Make sure the best trained model is saved to disk.
+
+Success Criteria
+Team will run a code cell in a Jupyter notebook for the coach that shows the model accuracy is 90% or greater (using the test data set from Challenge 3)
+Team will show logging that demonstrates validation accuracy that reaches 90% (using the validation dataset created in this challenge)
+References
+Read this first
+
+What is a convolutional neural net Ref or Video
+High level overview of Machine Learning and CNNs Video
+Deep Learning Frameworks
+
+Keras (an abstraction layer that uses TensorFlow or CNTK on the backend)
+Docs And Tutorials
+TensorFlow
+Docs And Tutorials
+Suggested starting point is a CNN from a Tutorial with the Layers API
+CNTK
+Docs And Tutorials
+Suggested starting point is a CNN from a Tutorial with the Layer API
+
+#### Challenge 5 - Deploy to the Cloud
+Background
+It’s not just enough to be able to build a world class machine learning model, you need to know how to expose it so that it can be consumed by team members, developers, and 3rd parties to provide useful functionality to applications and services for AdventureWorks customers.
+
+In this challenge you will operationalize your model as a scoring REST API in the cloud (deploy it as a webservice), so that the developers at AdventureWorks and elsewhere can then write consumer applications and use this scoring endpoint for prediction.
+
+In this helpful diagram, the deployment phase is shown prominently as part of the Data Science lifecycle.
+
+Data Science Lifecycle
+
+Prerequisites
+Docker engine (Docker for Windows or Docker for Mac) installed and running locally or on a VM
+Azure CLI and Azure ML CLI (azure-cli and azure-cli-ml packages)
+Tooling such as the curl command line tool or Postman to send a request to your model endpoint
+Saved model from Challenge 3
+Challenge
+Use the team setup and team expertise to do the following tasks.
+
+Deploy the team’s saved model from Challenge 3 or Challenge 4 as a real-time web service on Azure.
+Use one of the following tools to deploy the model as and API to which data may be sent (e.g.Â arrays or json) and a json response received - see References for useful links.
+
+Azure Machine Learning CLI standalone
+Azure Machine Learning Workbench
+Non-CLI methods, e.g.Â Flask with Docker (see a suggestion, below)
+It’d be best for AdventureWorks to have a fairly simple API, so a json-serialized image would work well.
+
+Success Criteria
+Demonstrate with curl or Postman that sending an image, via a URL or serialized, to your cloud deployed web service returns the model output - the class of gear
+References
+Read Me First
+
+Overview of Azure ML model management Doc
+Deployment walkthrough Ref
+More on Deployment
+
+Microsoft Blog on deploying from Azure ML Workbench and the Azure ML CLI Ref
+Setting up with the Azure ML CLI for deployment Doc
+Non-CLI deployment methods (AML alternative) Ref
+Scoring File and Schema Creation References
+
+Example of schema generation Doc
+Example of the scoring file showing a CNTK model and serializing an image as a PANDAS data type for input data to service Ref
+Example of the scoring file showing a scikit-learn model and a STANDARD data type (json) for input data to service Ref
+After creating a run and init methods as in the links above, plus a schema file, begin with “Register a model” found in this Doc
+Note one change required: there must be, if using certain frameworks, a pip requirements file (use -p flag) when creating the manifest
+Docker
+
+Docker Docs Ref
+Hints
+There are different input data type options for sending up to the service and you can specify this when you generate the schema for the service call.
+The team must install the Azure ML CLI into the system Python if using a DSVM and the main Python in a local setup with (from this Doc): ! sudo pip install -r https://aka.ms/az-ml-o16n-cli-requirements-file
+When creating the image with the az ml cli, remember to include all files necessary with the -d flag such as the conda_dep.yml or any label files. Avoid using the -c flag for the conda_dep.yml file, using -d instead. Also, a requirements.txt file, with the pip installable packages, should be specified with the -p flag.
+Cluster deployment: Refer to the rest of this Doc
+
+#### Challenge 6: Detecting Safety
+Background
+AdventureWorks has partnered with a local guide service to help them collect images of mountaineers and climbers wearing helmets in an effort to encourage the use of helmets for safety. AdventureWorks wants a solution that can locate every helmet present in an image.
+
+Object detection adds a layer of complexity and usefulness on top of classification. It predicts whether something is present, and where in the image it is located. This is important if the model needs to identify multiple instances of a class in a given image.
+
+Prerequisites
+The new helmet dataset (a list of image URLs for training and testing)
+Cloud setup ! curl -O https://challenge.blob.core.windows.net/challengefiles/summit_post_urls_selected.txt
+Local setup Download
+Team decides upon a deep learning framework to use in this Challenge, after reading about several different frameworks (See References)
+Team performs any installs or updates to the latest versions of frameworks in their chosen setup
+Challenge
+Obtain the images from the URL list in the given file in a format conducive to the framework of choice.
+
+Using the deep learning framework, create an object detection solution utilizing a modern model like Faster R-CNN. This model should be able to detect and create a bounding box around each helmet present in an image.
+
+Success Criteria
+Demonstrate logging or TensorBoard output from your deep learning solution showing a maximum Mean Average Precision (mAP) over 80%
+References
+Read this first
+
+What is object detection Ref
+What is mAP Ref
+Tooling
+
+Visual Object Tagging Tool VoTT. Works for TensorFlow and CNTK Ref
+When on Linux, the Tensorflow Object Detection API Ref
+CNTK Documentation Ref
+Hints
+When the team is planning for image processing, explore what functionality your deep learning framework offers
