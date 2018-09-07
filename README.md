@@ -1,11 +1,22 @@
 # Microsoft OpenHack 2018 
-2018.09.04 ~ 2018.09.06 (3 days)
-Sydney, Australia
+https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x43738390001
 
-This is microsoft openhack table19 team repo.
+OpenHack Machine Learning - Sydney
+September 4th – 6th, 2018, 8:30 -17:00
+Cliftons, Level 3, 10 Spring Street, Sydney, NSW
+
+OpenHack Machine Learning brings you together with other developers in a three-day event to sharpen your Machine Learning skills through a series of structured challenges to solve problems in the Computer Vision space.
+ 
+This journey will have you exploring Data Wrangling, Cognitive Services, Azure Machine Learning Workbench and Custom Machine Learning solutions and neural networks on industry standard frameworks such as TensorFlow and CNTK. If you complete all the challenges, your adventure will end with experience deploying your solution.
+ 
+Throughout this event you will have the opportunity to:
+Work with fellow developers to leverage industry standard Machine Learning Tools and platforms to solve a series of increasingly difficult challenges
+Attend and participate in Machine Learning related technical talks with Industry Subject Matter Experts
+Discuss your real-world business challenges with Microsoft Experts
+Connect and network with Microsoft and industry developers from across the Machine Learning Ecosystem
 
 ## members of openhack-table19 team
-
+This is microsoft openhack table19 team repo.
 Here are members name and github id:
 
 Alyse: abroombroom  
