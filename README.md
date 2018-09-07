@@ -1,9 +1,9 @@
 # Microsoft OpenHack 2018 
-https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x43738390001
+https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x43738390001  
 
-OpenHack Machine Learning - Sydney
-September 4th – 6th, 2018, 8:30 -17:00
-Cliftons, Level 3, 10 Spring Street, Sydney, NSW
+OpenHack Machine Learning - Sydney  
+September 4th – 6th, 2018, 8:30 -17:00  
+Cliftons, Level 3, 10 Spring Street, Sydney, NSW  
 
 OpenHack Machine Learning brings you together with other developers in a three-day event to sharpen your Machine Learning skills through a series of structured challenges to solve problems in the Computer Vision space.
  
@@ -16,8 +16,8 @@ Discuss your real-world business challenges with Microsoft Experts
 Connect and network with Microsoft and industry developers from across the Machine Learning Ecosystem
 
 ## members of openhack-table19 team
-This is microsoft openhack table19 team repo.
-Here are members name and github id:
+This is microsoft openhack table19 team repo.  
+Here are members name and github id:  
 
 Alyse: abroombroom  
 Abner: zhangabner  
