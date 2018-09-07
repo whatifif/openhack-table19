@@ -14,7 +14,17 @@ Heeseob: whatifif
 Nigel: nzigel  
 Valerie: valerie  
 
-## There are 6 challenges
+## There are 7 challenges
+
+Challenge 0: Setting Up Your Workspace For A Successful OpenHack  
+Challenge 1 - Gearing up for Machine Learning  
+Challenge 2 - The Data in Data Science  
+Challenge 3: Introduction to Custom Machine Learning  
+Challenge 4: Deep Learning  
+Challenge 5 - Deploy to the Cloud  
+Challenge 6: Detecting Safety  
+
+
 #### Challenge 0: Setting Up Your Workspace For A Successful OpenHack
 Background
 Before the team can begin working on Machine Learning and Data Science tasks, everyone needs to have a development environment that will work well with common Python libraries.
