@@ -23,7 +23,7 @@ Alyse: abroombroom
 Abner: zhangabner  
 Heeseob: whatifif  
 Nigel: nzigel  
-Valerie: valerie  
+Verlebie: verlebie  
 
 ## There are 7 challenges
 
